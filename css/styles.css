@@ -6,7 +6,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-image: url('../img/indexbg.png');
+    background-image: url('../img/bgsimple.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -14,15 +14,15 @@ body {
 }
 
 #faqpage {
-    background-image: url('../img/faqbg.png');
+    background-image: url('../img/simplebg.png');
 }
 
 #requestpage {
-    background-image: url('../img/bgaqw.png');
+    background-image: url('../img/simplebg3.png');
 }
 
 #getpage {
-    background-image: url('../img/faqbg.png');
+    background-image: url('../img/simplebg2.png');
 }
 
 body {
@@ -36,18 +36,19 @@ main {
 }
 
 .navbar {
-    background-color: transparent;
+    background-color: rgb(255, 255, 255, 0.6);
     box-shadow: none;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    margin: 5px 16%;
+    margin: 5px 1%;
+    border-radius: 10px;
 }
 
 .navbar-item {
-    color: white !important;
+    color: #083409 !important;
 }
 
 .navbar-item img {
@@ -342,13 +343,14 @@ progress::-moz-progress-bar {
 
 /* Footer styles */
 .footer {
-    background: transparent;
-    color: white;
+    background: rgb(255, 255, 255, 0.6);
+    color: #083409;
     padding: 1rem 1.5rem;
     z-index: 1000;
     position: relative;
-    margin: 2px 16%;
+    margin: 2px 1%;
     font-size: 13px;
+    border-radius: 10px;
 }
 
 .footer .columns {
@@ -361,7 +363,7 @@ progress::-moz-progress-bar {
 .footer .social-icon {
     display: inline-block;
     margin-left: 40px;
-    color: white;
+    color: #083409;
     transition: transform 0.3s;
 }
 
@@ -400,12 +402,11 @@ progress::-moz-progress-bar {
 }
 
 .column.content-box {
-    margin-right: 20px;
+    margin-right: 14px;
+    margin-left: 14px;
 }
 
-.column.content-box.progress-container {
-    margin-left: 10px;
-}
+
 
 
 
@@ -417,7 +418,7 @@ progress::-moz-progress-bar {
     border-radius: 10px;
     overflow: hidden;
     height: 20px;
-    margin-bottom: 33px;
+    margin-bottom: 20px;
 }
 
 .progress-bar {
@@ -446,7 +447,9 @@ progress::-moz-progress-bar {
 
 
 .title:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
 }
 
 .title:not(.is-spaced)+.subtitle {
@@ -458,6 +461,7 @@ progress::-moz-progress-bar {
     font-size: 1.3rem;
 
 }
+
 
 
 
@@ -543,7 +547,7 @@ progress::-moz-progress-bar {
     }
 
     .hero-body {
-        padding: 5rem 3rem;
+        padding: 5rem 1rem;
     }
 
     .progress-container {
@@ -554,25 +558,20 @@ progress::-moz-progress-bar {
         max-width: 100%;
     }
 
-    .column.content-box.progress-container {
-        margin-left: 0px;
-    }
-
-    .column.content-box {
-        margin-right: 0px;
-    }
 }
 
 @media screen and (min-width: 909px),
 print {
     .hero-body {
         padding: 5rem 3rem;
+        padding-bottom: 0rem;
     }
 }
 
 @media only screen and (max-width: 900px) {
     .hero-body {
-        padding: 5rem 2rem;
+        padding-bottom: 1.5rem;
+        padding-top: 7rem;
     }
 }
 
@@ -591,4 +590,65 @@ print {
 #request .label {
     color: white;
     text-align: justify !important;
+}
+
+.content h3 {
+    color: #083409;
+}
+
+#maint {
+    color: #083409;
+}
+
+
+.section {
+    padding: 0.5rem 3rem;
+}
+
+
+#countdown {
+    color: #e60000;
+}
+
+#fbcm {
+    text-align: center;
+
+    padding-top: 0.75rem;
+    padding-bottom: 2rem;
+}
+
+#fbcmtitle {
+    color: white;
+}
+
+#mainpagefaq {
+    margin-top: 1rem;
+}
+
+.columns:last-child {
+    margin-bottom: 0rem;
+}
+
+#faqmp {
+    font-size: 12px;
+}
+
+#countdown {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Responsivee */
+@media only screen and (max-width: 900px) {
+    .subtitle:not(:last-child) {
+        margin-bottom: 3.5rem;
+    }
+
+    .title.is-2 {
+        font-size: 1.75rem;
+    }
+
+    .section {
+        padding: 0.5rem 1rem;
+    }
 }
